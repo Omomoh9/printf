@@ -9,12 +9,12 @@
 
 int handle_c(va_list arg)
 {
-	char c;
+	char a;
 
-	c = va_arg(arg, int);
-	if (c < 32 || c > 126)
+	a = va_arg(arg, int);
+	if (a < 32 || a > 126)
 	{
-		if (c == 10)
+		if (a == 10)
 		{
 			_putchar('\n');
 			return (1);
@@ -26,6 +26,6 @@ int handle_c(va_list arg)
 			return (-1);
 	}
 
-	_putchar(c);
+	_putchar(a);
 	return (1);
 }
