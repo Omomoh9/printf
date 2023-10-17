@@ -18,7 +18,7 @@ int handle_c(va_list arg)
 		{
 			_putchar('\n');
 			return (1);
-		} else if (c == 0)
+		} else if (a == 0)
 		{
 			_putchar('\0');
 			return (1);
